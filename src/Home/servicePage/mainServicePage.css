@@ -1,0 +1,198 @@
+.msp-body {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.msp-main {
+    width: 95%;
+    margin: auto;
+}
+
+.msp-title h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.msp-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.msp-div {
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 30px;
+    width: 370px;
+    min-height: 400px;
+}
+
+.msp-div1 {
+    text-align: left;
+}
+
+.msp-div1 p {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: bold;
+}
+
+.msp-div1 p span {
+    display: block;
+    font-size: 46px;
+    font-weight: 600;
+    color: #242424;
+    position: relative;
+}
+
+.msp-div1 p span span::before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 12px;
+    background: rgba(217, 97, 34, 0.25);
+}
+
+.msp-div2 {
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 25px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mspc-top {
+    display: flex;
+    align-items: center;
+}
+
+.mspc-top img {
+    width: 65px;
+    aspect-ratio: 1;
+    margin-right: 20px;
+    filter: drop-shadow(0px 5px 15px #93BAD3);
+}
+
+.mspc-top h6 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mspc-des {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #484848;
+}
+
+.mspc-btn a {
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: #d96122;
+}
+
+.msp-div3 {
+    background-color: #d96122;
+    position: relative;
+    padding: 25px;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.msp-div3 h6 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.msp-div3 img {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    width: 250px;
+    opacity: 0.6;
+}
+
+.msp-div3 a {
+    display: inline-block;
+    background-color: rgba(255, 195, 164, 0.5);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.msp-div3 a:hover {
+    background-color: rgba(255, 195, 164, 1);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .msp-content {
+        gap: 20px;
+    }
+
+    .msp-title h1 {
+        font-size: 32px;
+    }
+
+    .msp-div {
+        width: 45%;
+    }
+
+    .msp-div1 p {
+        font-size: 30px;
+    }
+
+    .msp-div1 p span {
+        font-size: 36px;
+    }
+
+    .msp-div3 h6 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .msp-div {
+        width: 100%;
+    }
+
+    .msp-div1 p {
+        font-size: 24px;
+    }
+
+    .msp-div1 p span {
+        font-size: 28px;
+    }
+
+    .msp-div3 h6 {
+        font-size: 20px;
+    }
+
+    .msp-div3 img {
+        width: 200px;
+    }
+
+    .msp-div3 a {
+        padding: 10px 20px;
+    }
+}
